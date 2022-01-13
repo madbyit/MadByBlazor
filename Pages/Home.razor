@@ -1,0 +1,23 @@
+﻿@page "/"
+
+<PageTitle>MadByBlazor</PageTitle>
+
+<div>
+    <h1>Welcome!</h1>
+    <h3>I am Madilyn (MadBy) and this is my Blazor application.</h3>
+    <p>This app is intended for me to practice coding in Blazor.</p>
+</div>
+<div>
+    <button class="btn btn-primary" @onclick="IncrementCount"><span style="color:black">Click counter</span></button>
+    <p role="status">Current count: @currentCount</p>
+</div>
+
+@code {
+
+    private int currentCount = 0;
+
+    private void IncrementCount()
+    {
+        currentCount++;
+    }
+}

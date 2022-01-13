@@ -2,6 +2,7 @@
 
 html, body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-image: linear-gradient(180deg, rgb(248, 185, 234) 0%, #c150dd 95%);
 }
 
 h1:focus {
@@ -9,13 +10,35 @@ h1:focus {
 }
 
 a, .btn-link {
-    color: #3300c1;
+    color: whitesmoke;
 }
 
 .btn-primary {
     color: #fff;
-    background-color: #1b6ec2;
-    border-color: #1861ac;
+    background-color: #b965f1;
+    border-color: #8421a1;
+}
+
+.btn-submithello {
+    width: 100px;
+    height: 30px;
+    margin: 5px;
+    outline: 1px solid black;
+    border-radius: 0.1rem;
+    color: rgb(12, 12, 12);
+    background-color: #c2c8ce;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textbox-in {
+    width: 100px;
+    height: 30px;
+    margin: 5px;
+    outline: 1px solid slateblue;
+    border-radius: 0.1rem;
+    text-align: center;
 }
 
 .content {
