@@ -1,0 +1,38 @@
+@page "/dropdown"
+
+<PageTitle>DropdownTest</PageTitle>
+
+<div style="padding-bottom: 20px;">
+    <h3>Dropdown test</h3>
+    <h5> - without licensed Syncfusion dropdown</h5>
+</div>
+<div class="ddlist-prof">
+    <SfDropDownList TValue="string" TItem="Profession" Placeholder="Select a developer profession" DataSource="@LocalData">
+        <DropDownListFieldSettings Value="ID" Text="Text"></DropDownListFieldSettings>
+    </SfDropDownList>
+</div>
+
+
+@code {
+/*
+* Note: 'public string?' is used to get rid of missing null-ref
+*/
+ public class Profession
+  {  
+    public string? ID { get; set; }
+    public string? Text { get; set; }
+  }
+
+  List<Profession> LocalData = new List<Profession> {
+    new Profession() { ID= "Profession1", Text= "Software Designer" },
+    new Profession() { ID= "Profession2", Text= "Web Developer" },
+    new Profession() { ID= "Profession3", Text= "Frontend Developer" },
+    new Profession() { ID= "Profession4", Text= "Backend Developer" },
+    new Profession() { ID= "Profession5", Text= "Fullstack Developer" },
+    new Profession() { ID= "Profession6", Text= "Embedded Developer" },
+    new Profession() { ID= "Profession7", Text= "Android Developer" },
+    new Profession() { ID= "Profession8", Text= "iOS Developer"},
+    new Profession() { ID= "Profession9", Text= "Software Tester" },
+    new Profession() { ID= "Profession10", Text= "DevOps Engineer"},
+  };
+}

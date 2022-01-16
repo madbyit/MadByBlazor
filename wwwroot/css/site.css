@@ -111,8 +111,12 @@ a, .btn-link {
     width: 250px;
 }
 
-  .myinfo {
+.myinfo {
     float: right;
     width: 75%;
     text-align: left;
-  }
+}
+
+.ddlist-prof {
+    width: 300px;
+}
