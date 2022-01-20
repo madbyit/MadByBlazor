@@ -8,41 +8,7 @@
         and this is my Blazor application.</h3>
     <p>This app is intended for me to practice coding in Blazor.</p>
 </div>
-<div style="padding: 50px;">
-    <div class="row">  
-        <div class="col-sm-2">  
-            <p>Enter your name</p>  
-        </div>  
-        <div class="col-sm-3">  
-            <input class="textbox-in" placeholder="Enter Name" @bind="inputName" />
-            <button class="btn btn-submithello" @onclick="HelloName">Submit</button>
-        </div>
-        <br>
-        <div style="padding-top:25px ;">
-            <output>Hello: <span style="color: purple">@InputName</span></output>
-        </div>
-    </div>
-</div>
-<div style="padding: 50px;">
-    <button class="btn btn-primary" @onclick="IncrementCount"><span style="color:black">Click counter</span></button>
-    <p role="status">Current count: @currentCount</p>
-</div>
-
 
 @code {
-
-    private string? inputName;
-    private int currentCount = 0;
-
-    private string? InputName { get; set; }
-    private void HelloName()
-    {
-        InputName = inputName;
-        Console.WriteLine("Input Name was: " + InputName);
-    }
-
-    private void IncrementCount()
-    {
-        currentCount++;
-    }
+//code
 }
